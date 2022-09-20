@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'medicine',
       theme: ThemeData(
         primarySwatch: Colors.lightGreen,
       ),
@@ -63,6 +63,10 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            ElevatedButton(
+              onPressed: (){/*タップされた時の処理*/},
+              child: Text('新規登録'),
+            )
           ],
         ),
       ),
