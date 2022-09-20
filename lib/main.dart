@@ -4,6 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 void main() {
   runApp(const MyApp());
 }
+
 class SharedPrefs {
   static SharedPreferences? prefs;
 
@@ -11,7 +12,6 @@ class SharedPrefs {
     prefs ??= await SharedPreferences.getInstance();
   }
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
